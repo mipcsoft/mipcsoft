@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if IE 8]>          <html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>          <html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->  <html> <!--<![endif]-->
+<head>
+
+    <title>{% block title %} Mipcsoft | Ingenierías Integradas {% endblock %}</title>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Ingenierías Integradas">
+    <meta name="author" content="desarrollo@mipcsoft.com">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{{ asset('assets/icon.ico')}}" type="image/x-icon">
+
+    {% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css')}}">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/components/revolution_slider/css/settings.css')}}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/components/revolution_slider/css/style.css')}}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/components/jquery.bxslider/jquery.bxslider.css')}}" media="screen" />
+    <link id="main-style" rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/updates.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css')}}">
+
+    <!-- CSS for IE -->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/ie.css')}}" />
+    <![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+
+    {% endblock %}
+
+
+</head>
+<body>
+
+<div id="page-wrapper">
+
+    <header id="header" class="navbar-static-top">
+
+        {{ include('base/header/header.html.twig') }}
+
+    </header>
+
+    {% block body %}
+
+
+    {% endblock %}
+
+    <footer id="footer" class="style5">
+
+        {{ include('base/footer.html.twig') }}
+
+    </footer>
+
+</div>
+
+{% block javascripts  %}
+
+<script type="text/javascript" src="{{ asset('assets/js/jquery-1.11.1.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/jquery.noconflict.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/modernizr.2.7.1.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/jquery-migrate-1.2.1.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/jquery.placeholder.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/jquery-ui.1.10.4.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/bootstrap.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/components/revolution_slider/js/jquery.themepunch.tools.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/components/revolution_slider/js/jquery.themepunch.revolution.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/components/jquery.bxslider/jquery.bxslider.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/jquery.stellar.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/waypoints.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/theme-scripts.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/scripts.js')}}"></script>
+
+{% endblock %}
+
+</body>
+</html>

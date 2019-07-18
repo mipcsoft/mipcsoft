@@ -1,0 +1,27 @@
+<li class="menu-item-has-children">
+    <a href="#" class="{{ app.request.attributes.get('_route') in ['development', 'outsorcing', 'licensing', 'maintenance', 'computerforensics', 'electronics'] ? 'active' : '' }}">
+        Informática
+    </a>
+
+    <ul>
+        <li class="{{ app.request.attributes.get('_route') in ['development'] ? 'active' : '' }}">
+            <a href="{{ path('development') }}">Desarrollo de Software</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['outsorcing'] ? 'active' : '' }}">
+            <a href="{{ path('outsorcing') }}">Outsorcing</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['licensing'] ? 'active' : '' }}">
+            <a href="{{ path('licensing') }}">Licenciamiento</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['computerforensics'] ? 'active' : '' }}">
+            <a href="{{ path('computerforensics') }}">Informática Forense</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['maintenance'] ? 'active' : '' }}">
+            <a href="{{ path('maintenance') }}">Mantenimiento Informático</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['electronics'] ? 'active' : '' }}">
+            <a href="{{ path('electronics') }}">Electrónica Informática</a>
+        </li>
+    </ul>
+
+</li>

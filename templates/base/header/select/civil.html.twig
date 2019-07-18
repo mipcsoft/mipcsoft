@@ -1,0 +1,18 @@
+<li class="menu-item-has-children">
+    <a href="#" class="{{ app.request.attributes.get('_route') in ['paving', 'sportsfields', 'civil'] ? 'active' : '' }}">
+        Obra Civil
+    </a>
+
+    <ul>
+        <li class="{{ app.request.attributes.get('_route') in ['paving'] ? 'active' : '' }}">
+            <a href="{{ path('paving') }}">Pavimentación</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['sportsfields'] ? 'active' : '' }}">
+            <a href="{{ path('sportsfields') }}">Campos Deportivos</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['civil'] ? 'active' : '' }}">
+            <a href="{{ path('civil') }}">Obra Civil</a>
+        </li>
+    </ul>
+
+</li>

@@ -1,0 +1,47 @@
+<div class="topnav hidden-xs">
+
+    {{ include('base/header/top.html.twig') }}
+
+    <div class="main-header">
+
+        <a href="#mobile-menu-01" data-toggle="collapse" class="mobile-menu-toggle">
+            Mobile Menu Toggle
+        </a>
+
+        <div class="container">
+
+            <h1 class="navbar-brand">
+                <a href="{{ path('index') }}" title="Mipcsoft - Inicio">
+                    <img src="{{ asset('assets/images/mipcsoft/1.png')}}" alt="Mipcsoft" />
+                </a>
+            </h1>
+
+            <nav id="main-menu" role="navigation">
+
+                {{ include('base/header/menu_pc.html.twig') }}
+
+            </nav>
+
+        </div>
+
+        <nav id="mobile-menu-01" class="mobile-menu collapse">
+
+            {{ include('base/header/menu_movil.html.twig') }}
+
+        </nav>
+
+    </div>
+
+    <div id="travelo-signup" class="travelo-signup-box travelo-box">
+
+        {{ include('base/header/signup.html.twig') }}
+
+    </div>
+
+    <div id="travelo-login" class="travelo-login-box travelo-box">
+
+        {{ include('base/header/login.html.twig') }}
+
+    </div>
+
+</div>

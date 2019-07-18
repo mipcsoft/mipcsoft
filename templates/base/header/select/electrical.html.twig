@@ -1,0 +1,24 @@
+<li class="menu-item-has-children">
+    <a href="#" class="{{ app.request.attributes.get('_route') in ['connections', 'netmaintenance', 'renewable', 'substations', 'ups'] ? 'active' : '' }}">
+        Electricidad
+    </a>
+
+    <ul>
+        <li class="{{ app.request.attributes.get('_route') in ['connections'] ? 'active' : '' }}">
+            <a href="{{ path('connections') }}">Acometidas Eléctricas</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['netmaintenance'] ? 'active' : '' }}">
+            <a href="{{ path('netmaintenance') }}">Mantenimiento Redes</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['renewable'] ? 'active' : '' }}">
+            <a href="{{ path('renewable') }}">Energías Renovables</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['substations'] ? 'active' : '' }}">
+            <a href="{{ path('substations') }}">Sub Estaciones</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['ups'] ? 'active' : '' }}">
+            <a href="{{ path('ups') }}">UPS</a>
+        </li>
+    </ul>
+
+</li>
