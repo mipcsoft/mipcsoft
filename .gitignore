@@ -1,5 +1,7 @@
 /var/
-/_mipcsoft/travelo/
-/_mipcsoft/travelo/*
-.idea/*
+/_mipcsoft/templates/
+/_mipcsoft/templates/*
+/.idea/
+/.idea/*
 .idea/
+.idea/*
