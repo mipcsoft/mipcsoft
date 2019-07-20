@@ -1,8 +1,18 @@
 <li class="menu-item-has-children">
-    <a href="#" class="{{ app.request.attributes.get('_route') in ['', ''] ? 'active' : '' }}">
+    <a href="#" class="{{ app.request.attributes.get('_route') in ['networking', 'links', 'voip'] ? 'active' : '' }}">
         Telecomunicaciones
     </a>
 
-
+    <ul>
+        <li class="{{ app.request.attributes.get('_route') in ['networking'] ? 'active' : '' }}">
+            <a href="{{ path('networking') }}">Redes Informáticas</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['links'] ? 'active' : '' }}">
+            <a href="{{ path('links') }}">Enlaces</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['voip'] ? 'active' : '' }}">
+            <a href="{{ path('voip') }}">Telefonía IP</a>
+        </li>
+    </ul>
 
 </li>

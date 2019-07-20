@@ -17,6 +17,7 @@ class WebController extends AbstractController
         ]);
     }
 
+
     /**
      **************************************************************
      * OBRA CIVIL - INGENIERIA CIVIL
@@ -59,12 +60,12 @@ class WebController extends AbstractController
         ]);
     }
 
+
     /**
      **************************************************************
      * INFORMATICA - INGENIERIA SISTEMAS
      **************************************************************
      */
-
 
     /**
      * @Route("systems/development", name="development")
@@ -204,5 +205,105 @@ class WebController extends AbstractController
             'controller_name' => 'WebController',
         ]);
     }
+
+
+    /**
+     **************************************************************
+     * TELECOMUNICACIONES - INGENIERIA TELECOMUNICACIONES
+     **************************************************************
+     */
+
+    /**
+     * @Route("communications/networking", name="networking")
+     * TELECOMUNICACIONES - INGENIERIA TELECOMUNICACIONES
+     * redes informaticas
+     */
+    public function networking()
+    {
+        return $this->render('web/communications/networking.html.twig', [
+            'controller_name' => 'WebController',
+        ]);
+    }
+
+    /**
+     * @Route("communications/links", name="links")
+     * TELECOMUNICACIONES - INGENIERIA TELECOMUNICACIONES
+     * links
+     */
+    public function links()
+    {
+        return $this->render('web/communications/links.html.twig', [
+            'controller_name' => 'WebController',
+        ]);
+    }
+
+    /**
+     * @Route("communications/voip", name="voip")
+     * TELECOMUNICACIONES - INGENIERIA TELECOMUNICACIONES
+     * telefonia IP
+     */
+    public function voip()
+    {
+        return $this->render('web/communications/voip.html.twig', [
+            'controller_name' => 'WebController',
+        ]);
+    }
+
+
+    /**
+     **************************************************************
+     * SEGURIDAD Y AUTOMATIZACION
+     **************************************************************
+     */
+
+    /**
+     * @Route("automation/cctv", name="cctv")
+     * SEGURIDAD Y AUTOMATIZACION
+     * circuito cerrado de TV
+     */
+    public function cctv()
+    {
+        return $this->render('web/automation/cctv.html.twig', [
+            'controller_name' => 'WebController',
+        ]);
+    }
+
+    /**
+     * @Route("automation/automation", name="automation")
+     * SEGURIDAD Y AUTOMATIZACION
+     * domotica y ofimatica
+     */
+    public function automation()
+    {
+        return $this->render('web/automation/automation.html.twig', [
+            'controller_name' => 'WebController',
+        ]);
+    }
+
+    /**
+     * @Route("automation/biometrics", name="biometrics")
+     * SEGURIDAD Y AUTOMATIZACION
+     * control de acceso
+     */
+    public function biometrics()
+    {
+        return $this->render('web/automation/biometrics.html.twig', [
+            'controller_name' => 'WebController',
+        ]);
+    }
+
+    /**
+     * @Route("automation/alarmsystem", name="alarmsystem")
+     * SEGURIDAD Y AUTOMATIZACION
+     * alarmas
+     */
+    public function alarmsystem()
+    {
+        return $this->render('web/automation/alarmsystem.html.twig', [
+            'controller_name' => 'WebController',
+        ]);
+    }
+
+
 
 }

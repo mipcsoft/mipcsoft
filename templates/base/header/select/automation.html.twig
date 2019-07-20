@@ -1,8 +1,21 @@
 <li class="menu-item-has-children">
-    <a href="#" class="{{ app.request.attributes.get('_route') in ['', ''] ? 'active' : '' }}">
-        Seguridad y Automatización
+    <a href="#" class="{{ app.request.attributes.get('_route') in ['cctv', 'automation', 'biometrics', 'alarmsystem'] ? 'automation' : '' }}">
+        Seguridad & Automatización
     </a>
 
-
+    <ul>
+        <li class="{{ app.request.attributes.get('_route') in ['cctv'] ? 'active' : '' }}">
+            <a href="{{ path('cctv') }}">Circuito Cerrado de TV</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['automation'] ? 'active' : '' }}">
+            <a href="{{ path('automation') }}">Domótica y Ofimática</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['biometrics'] ? 'active' : '' }}">
+            <a href="{{ path('biometrics') }}">Controles de Acceso</a>
+        </li>
+        <li class="{{ app.request.attributes.get('_route') in ['alarmsystem'] ? 'active' : '' }}">
+            <a href="{{ path('alarmsystem') }}">Sistema de Alarmas</a>
+        </li>
+    </ul>
 
 </li>

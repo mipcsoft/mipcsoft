@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="page-title-container">
+
+        <div class="container">
+            <div class="page-title pull-left">
+                <h5 class="entry-title"><strong>Seguridad & Automatización&nbsp;&nbsp;&nbsp;</strong><a style="color:#fdb714;" href="{{ path('alarmsystem') }}">Sistema de Alarmas</a></h5>
+
+            </div>
+            <ul class="breadcrumbs pull-right">
+                <li><a href="{{ path('index') }}">INICIO</a></li>
+                <li><a href="{{ path('alarmsystem') }}">Alarmas</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <section id="content">
+        <!-- INICIO CONTENIDO  -->
+
+
+
+        <!-- FIN CONTENIDO  -->
+    </section>
+
+{% endblock %}
+
+
+{% block javascripts  %}
+    {{ parent() }}
+
+{% endblock %}
